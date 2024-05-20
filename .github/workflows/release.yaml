@@ -41,7 +41,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USER }}
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
-          repository: "${{ github.repository_owner }}/hipibo-test-release"
+          repository: "${{ github.repository_owner }}/test-workflow"
           readme-filepath: ./README.md
           short-description: "hipibo test release desc."
       - id: prerelease
