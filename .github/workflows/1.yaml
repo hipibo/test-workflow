@@ -14,3 +14,4 @@ jobs:
       - name: hello
         run: |
           echo "hello w1 at ci/test"
+          exit 1
