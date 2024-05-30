@@ -1,4 +1,4 @@
-name: w1
+name: my flow1
 
 concurrency:
   group: w1-${{ github.ref }}

@@ -1,4 +1,4 @@
-name: w2
+name: my flow2
 
 concurrency:
   group: w2-${{ github.ref }}
@@ -6,7 +6,7 @@ concurrency:
 
 on:
   workflow_run:
-    workflows: ["w1"]
+    workflows: ["my flow1"]
     types:
       - completed
 
