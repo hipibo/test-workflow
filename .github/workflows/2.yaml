@@ -5,12 +5,14 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  workflow_run:
-    workflows: ["my flow1"]
-    types:
-      - completed
+  push:
+    branches:
+      - ci/test
 
 jobs:
+  call-flow1:
+    uses: ./.github/workflows/1.yaml
+    secrets: inherit
   test:
     runs-on: ubuntu-latest
     steps:

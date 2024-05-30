@@ -5,9 +5,7 @@ concurrency:
   cancel-in-progress: true
 
 on:
-  push:
-    branches:
-      - ci/test
+  workflow_call:
 
 jobs:
   test:
@@ -15,4 +13,4 @@ jobs:
     steps:
       - name: hello
         run: |
-          echo "hello w1"
+          echo "hello w1 at ci/test"
